@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         setTimeout(() => {
+  console.log("1st task done");
+  setTimeout(() => {
+    console.log("2nd task done");
+    setTimeout(() => {
+      console.log("3rd task done");
+      setTimeout(() => {
+        console.log("4th task done");
+      }, 1000);
+    }, 1000);
+  }, 1000);
+ }, 1000);
+
+ //Hard to read
+ //Hard to debug
+ //called "Call Back Hell"
+
+ //Promises .then()-handles success,.catch()-handles failure 
+ //Cleaner code avoids call back hell
+
+ function checkEven(num) {
+  return new Promise((resolve, reject) => {
+    if (num % 2 === 0) {
+      resolve("Even");
+    } else {
+      reject("Odd");
+    }
+  });
+}
+checkEven(4)
+  .then((msg) => console.log(msg))  
+  .catch((err) => console.log(err));
+
+  //   -----------------------
+function checkArray(arr) {
+  return new Promise((resolve, reject) => {
+    const found = arr.find((x) => x % 5 === 0);
+    if (found) {
+      resolve("Found number divisible by 5: " +found);
+    } else {
+      reject(" No number divisible by 5");
+    }
+        });}
+
+checkArray([3, 7, 10, 12])
+  .then((msg) => console.log(msg))
+  .catch((err) => console.log(err));
+
+//   -----------------------------------  
+function connectToMongoDB() {
+  return mongoose.connect();
+}
+connectToMongoDB()
+  .then(() => {
+    console.log('connected to MongoDB');
+  })
+  .catch((err) => {
+    console.error('connection failed:', err.message);
+    });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 1. Define the animation steps */
+    @keyframes moveRight {
+       from{
+        transform: translateX(0);   /* Start at left */
+      }
+       to{
+        transform: translateX(100px); /* Move 100px to the right */
+      }
+    }
+
+    /* 2. Apply animation to the box */
+    .box {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      background-color: steelblue;
+      animation: moveRight 2s infinite alternate; /* animation-name + duration */
+    }
+
+    /* box 2 animation.... */
+
+    .box1 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  animation: growBox 2s infinite alternate;
+  
+}
+
+@keyframes growBox {
+  0% {
+    width: 50px;
+    height: 50px;
+  }
+  50%{
+    background-color: yellow;
+  }
+  100%{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+
+.box2{
+   width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      background-color: steelblue;
+      animation: fadeIn 2s infinite alternate; 
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+
+
+
+.box3{
+   width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      background-color: rgb(45, 129, 197);
+      animation: rot 2s infinite alternate; 
+}
+@keyframes rot {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+  <div class ="box2"></div>
+  <div class="box3"></div>
+  <div class="box1"></div>
+
+</body>
+</html>

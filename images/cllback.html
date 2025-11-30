@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //A callback is a function that is passed as an argument to another function
+
+    //without callback
+    console.log("Start");
+    // Fake wait 
+    for (let i = 0; i < 1000000000; i++) {
+      // Just loop – blocks everything
+    }
+    console.log("End");
+
+    //with callback
+    console.log("Start");
+    setTimeout(() => {
+      console.log("End (after 2 seconds)");
+    }, 2000); // callback runs after 2 sec
+    console.log("Other work...");
+
+
+//     function greetLater(callback) {
+//   console.log("good morning");
+
+//   setTimeout(function() {
+//     console.log("3 seconds passed");
+//     callback();  // call the function passed as argument
+//   }, 3000);
+// }
+// function sayHello() {
+//   console.log("Hello from the callback");
+// }
+// greetLater(sayHello);
+// console.log("This runs while waiting");
+
+// function calculate(a, b, callback) {
+//   console.log("Calculating...");
+//   const result = callback(a, b); // run the function passed as argument
+//   console.log("Result is:", result);
+// }
+
+// function add(x, y) {
+//   return x + y;
+// }
+
+// function multiply(x, y) {
+//   return x * y;
+// }
+
+// calculate(5, 3, add);       // Output: Result is 8
+// calculate(5, 3, multiply);  // Output: Result is 15
+
+
+
+
+// function processStudent(name, mark, callback) {
+//   console.log(`Student Name: ${name}`);
+//   callback(mark);
+// }
+
+// function checkResult(mark) {
+//   if (mark >= 35) {
+//     console.log("Result: Pass");
+//   } else {
+//     console.log("Result: Fail");
+//   }
+// }
+
+// processStudent("Priya", 45, checkResult); // Pass
+// processStudent("Kavi", 20, checkResult);  // Fail
+
+
+function a(b){
+    b();  
+    console.log("hello");
+}
+a(function b(){
+    console.log("hi")
+});
+
+
+// -----------------------------------------------------
+
+function a(b){
+    console.log("hello");
+     b();
+}
+function b(){
+    console.log("hi");
+}
+setTimeout(() => 
+    a(b), 5000);
+
+
+// ------------------------
+
+function greet(name, b) {
+  console.log("Hi " + name);
+  b();  }
+function sayBye() {
+  console.log("Bye!");}
+greet("hiiii", sayBye);
+
+
+
+// -----------------------------------------------------
+
+
+
+function processData(data, callback) {
+  console.log("Processing data: " + data);
+  callback(data);
+}
+function displayData(data) {
+  console.log( data);
+}
+
+processData("welocome everyone", displayData);
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Named function
+            function greet2() {
+            console.log("Hello!");
+            }
+            greet2();
+            function sayHello() {
+            console.log("Welcome to JavaScript!");
+            }
+            sayHello();  
+           //Anonymous function
+            const greet1 = function() {
+            console.log("Hello");
+            };
+            greet1();
+
+            const add = function(x, y) {
+            return x + y;
+             };
+            console.log(add(5, 3));  //8
+
+            //Arrow function (ES6 feature)
+            const greet = () => {
+            console.log("Hello from arrow function!");
+            };
+            greet();
+
+            const multiply = (a, b) => {
+            return a * b;
+          };
+            console.log(multiply(4, 2));  // Output: 8
+           //simpler version with one return value
+            const multiply1 = (a, b) => a * b;
+            console.log(multiply1(4, 2));  // Output: 8
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>var, let, const in JavaScript</title>
+</head>
+<body>
+  <h2>JavaScript var, let, const Example</h2>
+ 
+
+  <script>
+    // ========== var ==========
+    console.log("=== var ===");
+    var a = 10;
+    console.log("Initial a:", a);
+
+    var a = 20; // 
+    console.log("Redeclared a:", a); // 20
+
+    a = 30; //
+    console.log("Reassigned a:", a); // 30
+
+    // ========== let ==========
+    console.log("=== let ===");
+    let b = 100;
+    console.log("Initial b:", b); // 100
+
+    // let b = 200; Not allowed:
+    b = 150; // 
+    console.log("Reassigned b:", b); // 150
+
+    // ========== const ==========
+    console.log("=== const ===");
+    const c = 500;
+    console.log("Initial c:", c); // 500
+
+    // const c = 600;  Not allowed: redeclaration
+    // c = 700;  Not allowed: reassignment
+
+  
+    
+  </script>
+</body>
+</html>

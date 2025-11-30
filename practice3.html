@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #fdd; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+  <form style="border: 1px solid black; padding: 20px; width: 500px; background-color: #fff;">
+    <h2 style="text-align: center; margin-bottom: 20px;">Student Registration Form</h2>
+
+    <label for="rollNo" style="display: block; margin-bottom: 5px;">Roll no. :</label>
+    <input type="text" id="rollNo" name="rollNo" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+
+    <label for="studentName" style="display: block; margin-bottom: 5px;">Student name :</label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name" style="width: 48%; margin-right: 4%; padding: 5px;">
+    <input type="text" id="lastName" name="lastName" placeholder="Last Name" style="width: 48%; padding: 5px; margin-bottom: 15px;">
+
+    <label for="fatherName" style="display: block; margin-bottom: 5px;">Father's name :</label>
+    <input type="text" id="fatherName" name="fatherName" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+
+    <label for="dob" style="display: block; margin-bottom: 5px;">Date of birth :</label>
+    <input type="text" id="day" name="day" placeholder="Day" style="width: 30%; margin-right: 5%; padding: 5px;">
+    <input type="text" id="month" name="month" placeholder="Month" style="width: 30%; margin-right: 5%; padding: 5px;">
+    <input type="text" id="year" name="year" placeholder="Year" style="width: 30%; padding: 5px; margin-bottom: 15px;">
+    <span style="font-size: 12px;">(DD-MM-YYYY)</span>
+
+    <label for="mobileNo" style="display: block; margin-bottom: 5px;">Mobile no. :</label>
+    <input type="text" id="countryCode" name="countryCode" placeholder="+91" style="width: 20%; margin-right: 5%; padding: 5px;">
+    <input type="text" id="mobileNo" name="mobileNo" style="width: 75%; padding: 5px; margin-bottom: 15px;">
+
+    <label for="emailId" style="display: block; margin-bottom: 5px;">Email id :</label>
+    <input type="email" id="emailId" name="emailId" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+
+    <label for="password" style="display: block; margin-bottom: 5px;">Password :</label>
+    <input type="password" id="password" name="password" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+
+    <label style="display: block; margin-bottom: 5px;">Gender :</label>
+    <input type="radio" id="male" name="gender" value="male"> Male
+    <input type="radio" id="female" name="gender" value="female"> Female
+    <br><br>
+
+    <label style="display: block; margin-bottom: 5px;">Department :</label>
+    <input type="checkbox" id="cse" name="department" value="cse"> CSE
+    <input type="checkbox" id="it" name="department" value="it"> IT
+    <input type="checkbox" id="ece" name="department" value="ece"> ECE
+    <input type="checkbox" id="civil" name="department" value="civil"> Civil
+    <input type="checkbox" id="mech" name="department" value="mech"> Mech
+    <br><br>
+
+    <label for="course" style="display: block; margin-bottom: 5px;">Course :</label>
+    <select id="course" name="course" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+      <option value="">Select Current Course</option>
+      <option value="btech">B.Tech</option>
+      <option value="mtech">M.Tech</option>
+      <option value="mba">MBA</option>
+    </select>
+
+    <label for="studentPhoto" style="display: block; margin-bottom: 5px;">Student photo :</label>
+    <input type="file" id="studentPhoto" name="studentPhoto" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+
+    <label for="city" style="display: block; margin-bottom: 5px;">City :</label>
+    <input type="text" id="city" name="city" style="width: 100%; margin-bottom: 15px; padding: 5px;">
+
+    <label for="address" style="display: block; margin-bottom: 5px;">Address :</label>
+    <textarea id="address" name="address" style="width: 100%; margin-bottom: 15px; padding: 5px;"></textarea>
+
+    <button type="submit" style="width: 100%; padding: 10px;">Register</button>
+  </form>
+</body>
+</html>

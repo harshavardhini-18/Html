@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+
+
+
+
+
+  const myPromise = new Promise((resolve, reject) => {
+  const success = true; // Change to false to test error
+
+  setTimeout(() => {
+    if (success) {
+      resolve("Promise Resolved: Task completed!");
+    } else {
+      reject(" Promise Rejected: Something went wrong.");
+    }
+  }, 2000); // wait for 2 seconds
+});
+
+// Use the Promise
+myPromise
+  .then((result) => {
+    console.log(result); 
+  })
+  .catch((error) => {
+    console.log(error); 
+  });
+// -------------------------------------------------
+  function checkEven(num) {
+  return new Promise((resolve, reject) => {
+    if (num % 2 === 0) {
+      resolve("Even");
+    } else {
+      reject("Odd");
+    }
+  });
+}
+// Use the promise
+checkEven(4)
+  .then((msg) => console.log(msg))  
+  .catch((err) => console.log(err));
+
+
+//   -----------------------
+function checkArray(arr) {
+  return new Promise((resolve, reject) => {
+    const found = arr.find((x) => x % 5 === 0);
+    if (found) {
+      resolve("Found number divisible by 5: " + found);
+    } else {
+      reject(" No number divisible by 5");
+    }
+  });
+}
+
+checkArray([3, 7, 10, 12])
+  .then((msg) => console.log(msg))
+  .catch((err) => console.log(err));
+
+  // ---------------------------------
+
+  //async await
+        // async function demo() {
+        // console.log("Start");
+
+        // await new Promise((resolve) => {
+        //     setTimeout(() => {
+        //     resolve();
+        //     }, 2000);
+        // });
+
+        // console.log("After 2 seconds");
+        // }
+
+        // demo();
+
+
+
+
+    </script>
+    
+</body>
+</html>

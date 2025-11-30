@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //without parameters
+        function func1(){
+            console.log("Hello");
+        }
+        func1();
+        //with parameters
+        function greet(name) {
+        console.log("Hello, " + name);
+        }
+        greet("Anu");
+        //with return
+        function add(a, b) {
+        return a + b;
+        }
+
+        let result = add(5, 3);  // result = 8
+        console.log("Sum:", result);
+        
+//1. Global Scope
+// Declared outside any function or block
+// Can be used anywhere in the program
+// 2. Local Scope
+// Declared inside a function or block
+// Can be used only within that function/block
+
+    var globalVar = 10;  
+    function myFunction() {
+      let localVar = 20;  
+      console.log("Inside function: globalVar =", globalVar);
+      console.log("Inside function: localVar =", localVar);
+    }
+
+    myFunction();
+
+    console.log("Inside main: globalVar =", globalVar); 
+    console.log("Inside main: localVar =", localVar);   
+
+    </script>
+</body>
+</html>

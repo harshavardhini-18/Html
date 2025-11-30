@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffccd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #ff6f91;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Google Login Button */
+.google-login {
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Group */
+.input-group {
+  background-color: #d50000;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-group label {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.input-group input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Remember Me Section */
+.remember-me {
+  background-color: #d50000;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.remember-me label {
+  margin-right: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Signup Link */
+.signup-link {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-link strong {
+  color: #000;
+}

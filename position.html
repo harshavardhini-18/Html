@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .class1{
+        background-color: red;
+        height:100px;
+        width:100px;
+        margin: 5px;
+         position: static;
+        left:50px; 
+        /* element appears in normal flow of the page,doesnot
+        move left,right,top and right also z-index  */  
+    }
+      .class2{
+        background-color:blue;
+        height:100px;
+        width:100px;
+        margin: 5px;
+        /* margin-left:50px;
+        margin-top:100px;     */ 
+          position: relative;/* adjusted from its normal postion */
+        /* left:50px;
+        top:50px;
+        z-index:1;  
+    } */
+      }
+      .class3{
+        background-color:greenyellow;
+        height:100px;
+        width:100px;
+        margin: 5px;
+        position: relative;
+        z-index: 3; 
+        
+    }
+
+</style>
+<body>
+    <div class="class1"></div>
+    <div class="class2"></div>
+    <div class="class3"></div>
+
+    
+</body>
+</html>

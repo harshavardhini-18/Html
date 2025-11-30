@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        const Student={
+            name:"Bob",
+            skills :["Html","Js","React"],
+            details (){
+                console.log('details function called');
+            },
+            address : {
+                city: "Hyderabad",
+                state: "Telangana",
+                country: "India"
+            }}
+        console.log(Student.name);
+        console.log(Student.skills);
+        console.log(Student.address);
+        console.log(Student.address.city);
+        console.log(Student.address.state);
+        console.log(Student.address.country);
+        Student.details();
+   </script> 
+</body>
+</html>

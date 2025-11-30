@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAfterDelay()">Click me</button>
+    <button onclick="startCounter()">Start Counting</button>-
+    <script>
+    function showAfterDelay() {
+        setTimeout(function() {
+        console.log("Hello! appears after 3 seconds.");
+        }, 3000); // 3000ms = 3 seconds
+    }
+
+    let count =1;
+    function startCounter() {
+    setInterval(function() {
+      console.log("Count:", count);
+      count++;
+    }, 2000); // Every 1 second
+  }
+
+//   setTimeout(() => {
+//   console.log("1st task done");
+//   setTimeout(() => {
+//     console.log("2nd task done");
+//     setTimeout(() => {
+//       console.log("3rd task done");
+//       setTimeout(() => {
+//         console.log("4th task done");
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+  
+    </script>
+
+    
+</body>
+</html>
